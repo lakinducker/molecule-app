@@ -28,7 +28,7 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                     // var width = 960,
                     //     height = 500;
                     var width = 500, height = 400;
-                    var color = d3.scale.category20();
+                    var color = d3.scale.category10();
                     var radius = d3.scale.sqrt()
                         .range([0, 6]);
                     var svg = d3.select(".molecule-diagram-area").append("svg")

@@ -23,7 +23,7 @@ export class MoleculeDiagramComponent implements OnChanges {
         var width = 500,
             height = 400;    
 
-        var color = d3.scale.category20();
+        var color = d3.scale.category10();
 
         var radius = d3.scale.sqrt()
             .range([0, 6]);
