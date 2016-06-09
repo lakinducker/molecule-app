@@ -31,21 +31,12 @@ System.register(['@angular/core', '@angular/router', './molecule-filter.pipe', '
                 function MoleculeListComponent(_moleculeService) {
                     this._moleculeService = _moleculeService;
                     this.pageTitle = 'Molecule List';
-                    this.imageWidth = 50;
-                    this.imageMargin = 2;
-                    this.showImage = false;
                     this.listFilter = '';
                 }
-                MoleculeListComponent.prototype.toggleImage = function () {
-                    this.showImage = !this.showImage;
-                };
                 MoleculeListComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     this._moleculeService.getMolecules()
                         .subscribe(function (molecules) { return _this.molecules = molecules; }, function (error) { return _this.errorMessage = error; });
-                };
-                MoleculeListComponent.prototype.onRatingClicked = function (message) {
-                    this.pageTitle = 'Molecule List: ' + message;
                 };
                 MoleculeListComponent = __decorate([
                     core_1.Component({

@@ -13,9 +13,6 @@ import { MoleculeService } from './molecule.service';
 })
 export class MoleculeListComponent implements OnInit {
     pageTitle: string = 'Molecule List';
-    imageWidth: number = 50;
-    imageMargin: number = 2;
-    showImage: boolean = false;
     listFilter: string = '';
     errorMessage: string;
     molecules: IMolecule[];
@@ -25,18 +22,10 @@ export class MoleculeListComponent implements OnInit {
 
     }
 
-    toggleImage(): void {
-        this.showImage = !this.showImage;
-    }
-
     ngOnInit(): void {
            this._moleculeService.getMolecules()
                      .subscribe(
                        molecules => this.molecules = molecules,
                        error =>  this.errorMessage = <any>error);
-    }
-
-    onRatingClicked(message: string): void {
-        this.pageTitle = 'Molecule List: ' + message;
     }
 }
