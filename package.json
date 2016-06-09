@@ -1,8 +1,8 @@
 {
-  "name": "product-management",
+  "name": "molecule-app",
   "version": "1.0.0",
-  "author": "Deborah Kurata",
-  "description": "Package for the Acme Product Management sample application",
+  "author": "Lakin Ducker",
+  "description": "App to show the structure of molecules",
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "tsc": "tsc",
