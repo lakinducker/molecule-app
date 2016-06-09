@@ -1,4 +1,6 @@
-.link line {
+/* NOTE: These styles have been moved to the main app.component.css. For some reason it does not work here. */
+
+/*.link line {
   stroke: #696969;
 }
 
@@ -15,4 +17,4 @@
 .node text {
   font: 10px sans-serif;
   pointer-events: none;
-}
+}*/
